@@ -81,6 +81,11 @@ public class EmployeeAction extends ActionBase {
     }
 
 
+    /**
+     * 新規登録を行う
+     * @throws ServletException
+     * @throws IOException
+     */
     public void create() throws ServletException, IOException {
 
         //CSRF対策 tokenのチェック
@@ -124,7 +129,6 @@ public class EmployeeAction extends ActionBase {
             }
 
         }
-
     }
 
     /**
