@@ -80,6 +80,7 @@ public class EmployeeAction extends ActionBase {
         forward(ForwardConst.FW_EMP_NEW);
     }
 
+
     public void create() throws ServletException, IOException {
 
         //CSRF対策 tokenのチェック
@@ -241,6 +242,8 @@ public class EmployeeAction extends ActionBase {
             redirect(ForwardConst.ACT_EMP, ForwardConst.CMD_INDEX);
         }
     }
+
+
 
 
 }
